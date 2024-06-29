@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@next/font':
+    specifier: 13.0.6
+    version: 13.0.6
+  clsx:
+    specifier: ^2.1.1
+    version: 2.1.1
   next:
     specifier: ^13.0.6
     version: 13.0.6(react-dom@18.2.0)(react@18.2.0)
@@ -20,6 +26,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  tailwind-merge:
+    specifier: ^2.3.0
+    version: 2.3.0
 
 devDependencies:
   '@types/node':
@@ -56,6 +65,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@babel/runtime@7.24.7:
+    resolution: {integrity: sha512-UwgBRMjJP+xv857DCngvqXI3Iq6J4v0wXmwc6sapg+zyhbwmQX67LUEFrkK5tbyJ30jGuG3ZvWpBiB9LCy1kWw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.1
     dev: false
 
   /@headlessui/react@1.7.10(react-dom@18.2.0)(react@18.2.0):
@@ -264,6 +280,10 @@ packages:
 
   /@next/env@13.0.6:
     resolution: {integrity: sha512-yceT6DCHKqPRS1cAm8DHvDvK74DLIkDQdm5iV+GnIts8h0QbdHvkUIkdOvQoOODgpr6018skbmSQp12z5OWIQQ==}
+    dev: false
+
+  /@next/font@13.0.6:
+    resolution: {integrity: sha512-5vxNmvnV0CbYjQGtztD5Axft9C7npKihbQpiFhnDwdb99f9K/QSFfcJqxz0E5QBkf67O2niVGJ5lApJDu78w0w==}
     dev: false
 
   /@next/swc-android-arm-eabi@13.0.6:
@@ -635,13 +655,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /caniuse-lite@1.0.30001435:
-    resolution: {integrity: sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==}
-    dev: false
-
   /caniuse-lite@1.0.30001638:
     resolution: {integrity: sha512-5SuJUJ7cZnhPpeLHaH0c/HPAnAHZvS6ElWyHK9GSIbVOQABLzowiI2pjmpvZ1WEbkyz46iFd4UXlOHR5SqgfMQ==}
-    dev: true
 
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -701,6 +716,11 @@ packages:
 
   /clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
     dev: false
 
@@ -1918,17 +1938,10 @@ packages:
       thenify-all: 1.6.0
     dev: true
 
-  /nanoid@3.3.4:
-    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: false
-
   /nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
   /nanoid@4.0.1:
     resolution: {integrity: sha512-udKGtCCUafD3nQtJg9wBhRP3KMbPglUsgV5JVsXhvyBs/oefqb4sqMEhKBBgqZncYowu58p1prsZQBYvAj/Gww==}
@@ -1997,7 +2010,7 @@ packages:
     dependencies:
       '@next/env': 13.0.6
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001435
+      caniuse-lite: 1.0.30001638
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2192,10 +2205,10 @@ packages:
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: true
 
   /picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
-    dev: true
 
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
@@ -2277,9 +2290,9 @@ packages:
     resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.4
-      picocolors: 1.0.0
-      source-map-js: 1.0.2
+      nanoid: 3.3.7
+      picocolors: 1.0.1
+      source-map-js: 1.2.0
     dev: false
 
   /postcss@8.4.38:
@@ -2404,6 +2417,10 @@ packages:
 
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
+    dev: false
+
+  /regenerator-runtime@0.14.1:
+    resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
     dev: false
 
   /rehype-katex@6.0.2:
@@ -2601,15 +2618,9 @@ packages:
       is-plain-obj: 4.1.0
     dev: false
 
-  /source-map-js@1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   /source-map-js@1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /source-map@0.7.4:
     resolution: {integrity: sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==}
@@ -2721,6 +2732,12 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /tailwind-merge@2.3.0:
+    resolution: {integrity: sha512-vkYrLpIP+lgR0tQCG6AP7zZXCTLc1Lnv/CCRT3BqJ9CZ3ui2++GPaGb1x/ILsINIMSYqqvrpqjUFsMNLlW99EA==}
+    dependencies:
+      '@babel/runtime': 7.24.7
+    dev: false
 
   /tailwindcss@3.4.4:
     resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
