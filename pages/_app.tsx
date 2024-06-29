@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
   return (
     <>
       <Component {...pageProps} />
-      <GoogleAnalytics gaId="G-7KDKC9L6V7Z" />
+      <GoogleAnalytics gaId="G-7KDKC9L6V7" />
     </>
   );
 }
