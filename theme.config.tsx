@@ -10,6 +10,12 @@ const config: DocsThemeConfig = {
   footer: {
     text: '2024 © EvanNotFound',
   },
+  head: (
+    <>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "de9abb7ca9d84afab8664d1c9d405979"}'></script>
+    </>
+  ),
+
   useNextSeoProps() {
     return {
       titleTemplate: '%s – 一个自以为是的情感指南'
