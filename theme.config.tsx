@@ -12,7 +12,7 @@ const config: DocsThemeConfig = {
   },
   head: (
     <>
-      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "de9abb7ca9d84afab8664d1c9d405979"}'></script>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "82cfd5698e6d457fbba750a86b5d3370"}'></script>
     </>
   ),
 
