@@ -1,26 +1,50 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { useRouter } from "next/router";
+import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
+import Script from "next/script";
 
 const config: DocsThemeConfig = {
-  logo: <span className={"font-bold text-lg"}>一个自以为是的情感指南</span>,
+  logo: <span className={"text-lg font-bold"}>一个自以为是的情感指南</span>,
   project: {
-    link: 'https://github.com/EvanNotFound/how-to-deal-with-my-crush',
+    link: "https://github.com/EvanNotFound/how-to-deal-with-my-crush",
   },
-  docsRepositoryBase: 'https://github.com/EvanNotFound/how-to-deal-with-my-crush',
+  docsRepositoryBase:
+    "https://github.com/EvanNotFound/how-to-deal-with-my-crush",
   footer: {
-    text: '2024 © EvanNotFound',
+    content: (
+      <p className="_text-sm">© {new Date().getFullYear()} EvanNotFound</p>
+    ),
   },
-  head: (
-    <>
-      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "82cfd5698e6d457fbba750a86b5d3370"}'></script>
-    </>
-  ),
+  head: function useHead() {
+    const config = useConfig();
+    const { route } = useRouter();
 
-  useNextSeoProps() {
-    return {
-      titleTemplate: '%s – 一个自以为是的情感指南'
-    }
-  }
-}
+    const description =
+      config.frontMatter.description ||
+      "个由 Evan 亲自撰写，收集，总结的情感指南";
+    const title =
+      config.title + (route === "/" ? "" : " - 一个自以为是的情感指南");
 
-export default config
+    return (
+      <>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta name="description" content={description} />
+        <meta property="og:description" content={description} />
+        <Script
+          defer
+          src="/lib/beacon.min.js"
+          data-cf-beacon='{"token": "82cfd5698e6d457fbba750a86b5d3370"}'
+        ></Script>
+      </>
+    );
+  },
+
+  // useNextSeoProps() {
+  //   return {
+  //     titleTemplate: "%s – 一个自以为是的情感指南",
+  //   };
+  // },
+};
+
+export default config;
