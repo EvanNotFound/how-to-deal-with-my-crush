@@ -6,7 +6,8 @@ export default {
     title: "🥲 未恋爱",
     type: "separator",
   },
-  "texting-before": "专题 | 网聊",
+  "texting-before": "网络上",
+  "in-person-before": "现实中",
   "what-to-do-before": "我该怎么做",
 
   during: {
