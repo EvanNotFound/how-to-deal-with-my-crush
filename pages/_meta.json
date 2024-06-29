@@ -1,7 +1,12 @@
 {
   "index": "序",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "about-me": "关于",
+  "---": {
+    "title": "教程系列",
+    "type": "separator"
+  },
+  "how-to-discourage-crush": "让 TA 死心",
+
   "contact": {
     "title": "想加你微信 😍 ↗",
     "type": "page",
