@@ -2,16 +2,13 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span className={"font-bold text-lg"}>一个自以为是的情感指南</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/EvanNotFound/how-to-deal-with-my-crush',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/EvanNotFound/how-to-deal-with-my-crush',
   footer: {
-    text: 'Nextra Docs Template',
+    text: '2024 © EvanNotFound',
   },
 }
 

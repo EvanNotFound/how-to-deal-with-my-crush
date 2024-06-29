@@ -1,23 +1,43 @@
-# Nextra Docs Template 
+# 一个自以为是的情感指南
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+指南在 [relationship.ohevan.com](https://relationship.ohevan.com)。
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+这是一个由 Evan 亲自撰写，收集，总结的情感指南，希望能帮助你解决一些情感问题。
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+### 为什么要写这个鬼东西？
 
-## Quick Start
+有人问我，
 
-Click the button to clone this repository and deploy it on Vercel:
+> 喜欢一个女生，该怎么办？
+>
+> 她喜欢我，但是我不喜欢她，该怎么拒绝？
+>
+> ta 死缠烂打，我该怎么办？
+>
+> ...
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+好问题，我不想再一一重复在即时聊天内解答，所以我决定写一个指南，总结一下，以后直接发链接就好了。
 
-## Local Development
+### 嗯好，但是感觉你好神经
 
-First, run `pnpm i` to install the dependencies.
+你说的对。
 
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
+所有本指南的内容都是源自我自己的亲身经历，以及我阅文无数（知乎 / Insta / etc) 的结果。
 
-## License
+鉴于我性别是 Male，所以本指南的内容可能主要是帮助其他男生解决情感问题。
 
-This project is licensed under the MIT License.
+### 你中文好烂，看不懂
+
+并不是我想装洋人，但是确实是已经两百年没有写中文了，敬请谅解。
+
+由于本人中文能力有限，有些词汇将用 English 表达，如遇不理解的词汇，欢迎右转 [Baidu](https://www.baidu.com) 或者 [ChatGPT](https://chatgpt.com) 查询。
+
+### 最后，我凭什么相信你？
+
+你不用相信我。
+
+我写的内容，你可以当作是一种参考，或者是一种娱乐。
+
+持续更新中，希望能帮助到你。
+
+如果你有任何问题，或者有任何好主意，欢迎点击导航栏里面的链接，[联系我](https://me.ohevan.com)。

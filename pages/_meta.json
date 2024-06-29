@@ -1,15 +1,11 @@
 {
-  "index": "Introduction",
+  "index": "序",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
-    "title": "Contact ↗",
+    "title": "想加你微信 😍 ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://me.ohevan.com",
     "newWindow": true
   }
 }
