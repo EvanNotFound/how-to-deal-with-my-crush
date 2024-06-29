@@ -22,8 +22,7 @@ const config: DocsThemeConfig = {
     const description =
       config.frontMatter.description ||
       "个由 Evan 亲自撰写，收集，总结的情感指南";
-    const title =
-      config.title + (route === "/" ? "" : " - 一个自以为是的情感指南");
+    const title = config.title + (route === "/" ? "" : " | 自以为是的情感指南");
 
     return (
       <>
