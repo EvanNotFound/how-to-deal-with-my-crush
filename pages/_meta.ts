@@ -7,7 +7,7 @@ export default {
     type: "separator",
   },
   "situational-before": "实际场景",
-  "what-to-do-before": "教程",
+  "tutorial-before": "教程",
 
   during: {
     title: "🥰 恋爱中",

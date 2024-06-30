@@ -18,6 +18,12 @@ export default withNextraConfig({
                 destination: '/situational-during/:path*',
                 permanent: true,
             },
+            {
+                source: '/what-to-do-before/:path*',
+                destination: '/tutorial-before/:path*',
+                permanent: true,
+            },
+
         ];
     }
 });
