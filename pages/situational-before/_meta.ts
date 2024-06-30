@@ -1,5 +1,5 @@
 export default {
-  "unclear-signals": "忽冷忽热",
+  "unclear-signals": "她忽冷忽热",
   "first-step": "迈出第一步",
-  "i-have-a-boyfriend": "有喜欢的人/男朋友",
+  "i-have-a-boyfriend": "她有喜欢的人/男朋友",
 };
