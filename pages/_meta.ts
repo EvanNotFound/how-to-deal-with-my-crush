@@ -14,6 +14,9 @@ export default {
     title: "🥰 恋爱中",
     type: "separator",
   },
+  "texting-during": "网络上",
+  // "in-person-during": "现实中",
+  "what-to-do-during": "如何维持感情",
 
   "not-finished-before": "还在写，别急，微信打钱加急",
 
@@ -30,6 +33,13 @@ export default {
   },
 
   "how-to-discourage-crush": "如何让 TA 死心",
+
+  sponsor: {
+    title: "支持我，来发电 ☕️ ↗",
+    type: "page",
+    href: "https://afdian.net/a/evannotfound",
+    newWindow: true,
+  },
 
   contact: {
     title: "想加你微信 😍 ↗",
