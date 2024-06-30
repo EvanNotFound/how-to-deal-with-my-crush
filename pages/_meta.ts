@@ -18,7 +18,7 @@ export default {
     // display: "hidden",
   },
   // "in-person-during": "现实中",
-  "what-to-do-during": { title: "如何维持感情", display: "hidden" },
+  "tutorial-during": { title: "教程", display: "hidden" },
 
   // "not-finished-before": "还在写，别急，微信打钱加急",
 
