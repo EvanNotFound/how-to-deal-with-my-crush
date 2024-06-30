@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "how-to-deal-with-my-crush",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "一个自以为是的情感指南",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/EvanNotFound/how-to-deal-with-my-crush.git"
   },
   "author": "Shu Ding <g@shud.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/EvanNotFound/how-to-deal-with-my-crush/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://relationship.ohevan.com",
   "dependencies": {
     "@next/third-parties": "^14.2.4",
     "clsx": "^2.1.1",
