@@ -6,17 +6,16 @@ export default {
     title: "🥲 未恋爱",
     type: "separator",
   },
-  "texting-before": "网络上",
-  "in-person-before": "现实中",
+  "situational-before": "实际场景",
   "what-to-do-before": "我该怎么做",
 
   during: {
     title: "🥰 恋爱中",
     type: "separator",
   },
-  "texting-during": {
-    title: "网络上",
-    display: "hidden",
+  "situational-during": {
+    title: "实际场景",
+    // display: "hidden",
   },
   // "in-person-during": "现实中",
   "what-to-do-during": { title: "如何维持感情", display: "hidden" },

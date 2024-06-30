@@ -5,4 +5,19 @@ const withNextraConfig = withNextra({
   themeConfig: "./theme.config.tsx",
 });
 
-export default withNextraConfig();
+export default withNextraConfig({
+    redirects: async () => {
+        return [
+            {
+                source: '/texting-before/:path*',
+                destination: '/situational-before/:path*',
+                permanent: true,
+            },
+            {
+                source: '/texting-during/:path*',
+                destination: '/situational-during/:path*',
+                permanent: true,
+            },
+        ];
+    }
+});
