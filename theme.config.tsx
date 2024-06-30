@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import Script from "next/script";
+import Link from "next/link";
 
 const config: DocsThemeConfig = {
   logo: <span className={"text-lg font-bold"}>一个自以为是的情感指南</span>,
@@ -12,7 +13,12 @@ const config: DocsThemeConfig = {
     "https://github.com/EvanNotFound/how-to-deal-with-my-crush",
   footer: {
     content: (
-      <p className="_text-sm">© {new Date().getFullYear()} EvanNotFound</p>
+      <p className="_text-sm">
+        <Link href={"https://creativecommons.org/licenses/by-sa/4.0/"}>
+          CC BY-SA 4.0{" "}
+        </Link>
+        © {new Date().getFullYear()} EvanNotFound
+      </p>
     ),
   },
   head: function useHead() {
