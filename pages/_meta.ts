@@ -14,9 +14,12 @@ export default {
     title: "🥰 恋爱中",
     type: "separator",
   },
-  "texting-during": "网络上",
+  "texting-during": {
+    title: "网络上",
+    display: "hidden",
+  },
   // "in-person-during": "现实中",
-  "what-to-do-during": "如何维持感情",
+  "what-to-do-during": { title: "如何维持感情", display: "hidden" },
 
   "not-finished-before": "还在写，别急，微信打钱加急",
 
