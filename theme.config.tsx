@@ -64,6 +64,16 @@ const config: DocsThemeConfig = {
       </>
     );
   },
+  color: {
+    hue: {
+      light: 0,
+      dark: 0,
+    },
+    saturation: {
+      light: 69,
+      dark: 41,
+    },
+  },
   // banner: {
   //   key: "aifadian-sponsorship",
   //   content: (
