@@ -25,5 +25,15 @@ export default withNextraConfig({
             },
 
         ];
-    }
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'res.cloudinary.com',
+                port: '',
+                pathname: "/dxn1ulklt/**"
+            },
+        ],
+    },
 });
