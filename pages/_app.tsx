@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
       <script
         defer
         src="https://events.ohevan.com/script.js"
-        data-website-id="0f5f41ba-4963-4f64-bed9-96bebca5d756"
+        data-website-id="2d4f1a5b-77d5-4448-9585-05cd43dbbefd"
       ></script>
     </>
   );
