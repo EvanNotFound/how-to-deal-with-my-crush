@@ -14,11 +14,11 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
         src="/beacon.min.js"
         data-cf-beacon='{"token": "82cfd5698e6d457fbba750a86b5d3370"}'
       ></Script>
-      <script
+      <Script
         defer
         src="https://events.ohevan.com/script.js"
         data-website-id="2d4f1a5b-77d5-4448-9585-05cd43dbbefd"
-      ></script>
+      ></Script>
     </>
   );
 }
