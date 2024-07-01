@@ -58,7 +58,7 @@ const config: DocsThemeConfig = {
         <meta property={"og:image"} content={"/opengraph.png"} />
         <Script
           defer
-          src="/lib/beacon.min.js"
+          src="/beacon.min.js"
           data-cf-beacon='{"token": "82cfd5698e6d457fbba750a86b5d3370"}'
         ></Script>
       </>
