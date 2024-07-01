@@ -1,7 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
-import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -56,11 +55,6 @@ const config: DocsThemeConfig = {
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
         <meta property={"og:image"} content={"/opengraph.png"} />
-        <Script
-          defer
-          src="/beacon.min.js"
-          data-cf-beacon='{"token": "82cfd5698e6d457fbba750a86b5d3370"}'
-        ></Script>
       </>
     );
   },
