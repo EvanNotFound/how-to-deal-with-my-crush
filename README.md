@@ -1,3 +1,6 @@
+
+![banner@2x](https://github.com/EvanNotFound/how-to-deal-with-my-crush/assets/68590232/5b1d4df4-b13d-49d2-b791-257e447d23b7)
+
 # 一个自以为是的情感指南
 
 指南在 [relationship.ohevan.com](https://relationship.ohevan.com)。
