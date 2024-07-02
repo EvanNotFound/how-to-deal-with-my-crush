@@ -68,19 +68,19 @@ const config: DocsThemeConfig = {
       dark: 41,
     },
   },
-  banner: {
-    key: "aifadian-sponsorship",
-    content: (
-      <a
-        href="https://afdian.net/a/evannotfound"
-        target="_blank"
-        rel="noreferrer"
-      >
-        ☕️ 你有个朋友也破防了？来爱发电赞助我吧！→
-      </a>
-    ),
-    dismissible: true,
-  },
+  // banner: {
+  //   key: "aifadian-sponsorship",
+  //   content: (
+  //     <a
+  //       href="https://afdian.net/a/evannotfound"
+  //       target="_blank"
+  //       rel="noreferrer"
+  //     >
+  //       ☕️ 你有个朋友也破防了？来爱发电赞助我吧！→
+  //     </a>
+  //   ),
+  //   dismissible: true,
+  // },
 };
 
 export default config;
