@@ -142,9 +142,10 @@ const config: DocsThemeConfig = {
             }}
             reaction={[
               "https://emojicdn.elk.sh/😭",
-              "https://emojicdn.elk.sh/😋",
-              "https://emojicdn.elk.sh/🤓",
+              "https://emojicdn.elk.sh/🥰",
               "https://emojicdn.elk.sh/😡",
+              "https://emojicdn.elk.sh/🤣",
+              "https://emojicdn.elk.sh/🤡",
             ]}
           />
         )}
