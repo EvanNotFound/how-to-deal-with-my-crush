@@ -8,9 +8,11 @@ export const SubscribeForm = () => {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
 
         // Perform any validation or additional logic here before submitting
         try {
@@ -58,9 +60,9 @@ export const SubscribeForm = () => {
                 </div>
 
                 <button type="submit"
-                        disabled={submitSuccess}
+                        disabled={isSubmitting}
                         className={
-                    "mt-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-500 transition-colors font-bold dark:bg-red-600/80 dark:hover:bg-red-500/80 dark:bg-opacity-80 dark:text-white/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                    "mt-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-500 font-bold dark:bg-red-600/80 dark:hover:bg-red-500/80 dark:bg-opacity-80 dark:text-white/90 disabled:opacity-50 disabled:cursor-not-allowed shadow-red-500/20 shadow-sm hover:shadow-lg hover:shadow-red-500/20 transition-all active:shadow-sm"
                 }>{
                     submitSuccess ? '订阅成功！' : '订阅'
                 }</button>
