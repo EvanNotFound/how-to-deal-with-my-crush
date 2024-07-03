@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wl-reaction-list {
+    gap: 24px !important;
+}
+
+.wl-reaction-title {
+    display: none !important;
+}
+
+.wl-reaction {
+    overflow: visible !important;
+}

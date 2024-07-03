@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "18.11.10",
+    "@waline/client": "^3.2.6",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "prettier": "^3.3.2",

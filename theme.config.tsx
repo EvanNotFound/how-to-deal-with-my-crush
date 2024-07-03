@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import Link from "next/link";
 import Image from "next/image";
+import { Waline } from "./components/waline";
 
 const config: DocsThemeConfig = {
   logo: (
@@ -67,6 +68,88 @@ const config: DocsThemeConfig = {
       light: 69,
       dark: 41,
     },
+  },
+  main: ({ children }) => {
+    const { route } = useRouter();
+    const config = useConfig();
+
+    let isShowComments = true;
+
+    if (
+      config.frontMatter.comments === false ||
+      config.frontMatter.comment === false
+    ) {
+      isShowComments = false;
+    }
+
+    return (
+      <>
+        {children}
+        {isShowComments && (
+          <Waline
+            serverURL={"https://waline.ohevan.com"}
+            path={`relationship.ohevan.com${route}`}
+            locale={{
+              nick: "昵称",
+              nickError: "昵称不能少于3个字符",
+              mail: "邮箱",
+              mailError: "请填写正确的邮件地址",
+              link: "网址",
+              optional: "可选",
+              placeholder: "破防了？来评论",
+              sofa: "暂无评论",
+              submit: "提交",
+              like: "喜欢",
+              cancelLike: "取消喜欢",
+              reply: "回复",
+              cancelReply: "取消回复",
+              comment: "评论",
+              refresh: "刷新",
+              more: "加载更多...",
+              preview: "预览",
+              emoji: "表情",
+              uploadImage: "上传图片",
+              seconds: "秒前",
+              minutes: "分钟前",
+              hours: "小时前",
+              days: "天前",
+              now: "刚刚",
+              uploading: "正在上传",
+              login: "登录",
+              logout: "退出",
+              admin: "博主",
+              sticky: "置顶",
+              word: "字",
+              wordHint: "评论字数应在 $0 到 $1 字之间！\n当前字数：$2",
+              anonymous: "匿名",
+              level0: "破防了",
+              level1: "我有个朋友",
+              level2: "我是没什么问题的",
+              level3: "真没感觉",
+              level4: "没破防",
+              level5: "破烦的是你",
+              gif: "表情包",
+              gifSearchPlaceholder: "搜索表情包",
+              profile: "个人资料",
+              approved: "通过",
+              waiting: "待审核",
+              spam: "垃圾",
+              unsticky: "取消置顶",
+              oldest: "按倒序",
+              latest: "按正序",
+              hottest: "按热度",
+              reactionTitle: "写的如何？",
+            }}
+            reaction={[
+              "https://emojicdn.elk.sh/😭",
+              "https://emojicdn.elk.sh/😋",
+              "https://emojicdn.elk.sh/🤓",
+              "https://emojicdn.elk.sh/😡",
+            ]}
+          />
+        )}
+      </>
+    );
   },
   // banner: {
   //   key: "aifadian-sponsorship",
