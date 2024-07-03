@@ -1,0 +1,81 @@
+---
+comments: false
+---
+
+import { useState } from "react";
+
+export const SubscribeForm = () => {
+    const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
+    const [submitSuccess, setSubmitSuccess] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        // Perform any validation or additional logic here before submitting
+        try {
+            const response = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email,
+                    name
+                }),
+            });
+
+            const data = await response.json();
+
+            if (data.status === "success") {
+                setSubmitSuccess(true)
+
+                console.log('Subscription successful!');
+            } else {
+                // Handle errors or validation failures
+                console.error('Subscription failed.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+        }
+    };
+
+    return (
+        <form onSubmit={handleSubmit} className="mt-6">
+            <div className={"flex flex-col gap-3 max-w-sm"}>
+                <input type="hidden" name="nonce" />
+
+                <div className={"flex flex-col gap-1"}>
+                    <label htmlFor="name" className={"text-sm font-bold"}>名称</label>
+                    <input type="text" className={"px-4 py-2 border border-zinc-200 dark:border-zinc-700 rounded-lg"}
+                           name="name" value={name} onChange={(e) => setName(e.target.value)} required placeholder="Your Name" />
+                </div>
+
+                <div className={"flex flex-col gap-1"}>
+                    <label htmlFor="email" className={"text-sm font-bold"}>邮件</label>
+                    <input className={"px-4 py-2 border border-zinc-200 dark:border-zinc-700 rounded-lg"}
+                           type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="example@example.com" />
+                </div>
+
+                <button type="submit"
+                        disabled={submitSuccess}
+                        className={
+                    "mt-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-500 transition-colors font-bold dark:bg-red-600/80 dark:hover:bg-red-500/80 dark:bg-opacity-80 dark:text-white/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                }>{
+                    submitSuccess ? '订阅成功！' : '订阅'
+                }</button>
+            </div>
+        </form>
+    );
+
+};
+
+# 订阅本指南，即时获取新文章更新
+
+如果你想要订阅本指南，即时获取新文章更新，可以在下方输入你的邮件地址和名称，点击订阅即可。
+
+我不会向你发送垃圾邮件 / 广告邮件。只有在有新文章更新时，才会通知你。
+
+<SubscribeForm />
+
+可随时取消订阅。

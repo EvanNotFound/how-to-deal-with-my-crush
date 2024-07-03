@@ -2,6 +2,10 @@ export default {
   index: "序",
   "about-me": "关于",
   disclaimer: "声明",
+  subscribe: {
+    title: "邮件订阅 💌",
+  },
+
   before: {
     title: "🥲 未恋爱",
     type: "separator",
