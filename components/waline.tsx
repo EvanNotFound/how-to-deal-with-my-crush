@@ -32,6 +32,7 @@ export const Waline = (props: WalineOptions) => {
       style={{
         // @ts-ignore
         "--waline-theme-color": "#DC828E",
+        "--waline-active-color": "#ce6b79",
       }}
     />
   );
