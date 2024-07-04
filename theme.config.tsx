@@ -147,6 +147,7 @@ const config: DocsThemeConfig = {
               "https://emojicdn.elk.sh/🤣",
               "https://emojicdn.elk.sh/🤡",
             ]}
+            dark={"html.dark"}
           />
         )}
       </>
