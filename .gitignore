@@ -1,2 +1,6 @@
 .next
 node_modules
+
+public/sitemap.xml
+public/sitemap-*.xml
+public/robots.txt
