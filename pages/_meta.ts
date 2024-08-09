@@ -31,7 +31,7 @@ export default {
     type: "separator",
   },
 
-  "not-finished-after": "还在写，别急，微信打钱加急",
+  "situational-after": "实际场景",
 
   "i-dont-want-to": {
     title: "🥱 不想恋爱",
@@ -41,9 +41,9 @@ export default {
   "how-to-discourage-crush": "如何让 TA 死心",
 
   sponsor: {
-    title: "支持我，来发电 ☕️ ↗",
+    title: "想加群，来 TG 👋️ ↗",
     type: "page",
-    href: "https://afdian.net/a/evannotfound",
+    href: "https://t.me/opinionatedrelationship",
     newWindow: true,
   },
 
