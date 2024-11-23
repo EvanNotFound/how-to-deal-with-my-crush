@@ -22,7 +22,7 @@ export default {
     // display: "hidden",
   },
   // "in-person-during": "现实中",
-  "tutorial-during": { title: "教程", display: "hidden" },
+  // "tutorial-during": { title: "教程", display: "hidden" },
 
   // "not-finished-before": "还在写，别急，微信打钱加急",
 
