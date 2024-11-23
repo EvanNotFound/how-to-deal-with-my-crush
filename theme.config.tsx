@@ -38,6 +38,9 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
+  search: {
+    placeholder: "搜索本指南...",
+  },
   head: function useHead() {
     const config = useConfig();
     const { route } = useRouter();
